@@ -20,10 +20,11 @@ public class App extends Application {
     //declare variables at class scope 
     public static Scene scene;
     public Pane menuLayout = new Pane();
-    public Pane game = new Pane();
+    public Pane gameLayout = new Pane();
     public Stage stage = new Stage();
     public Button start = new Button("Start");
     public Scene menuScene = new Scene(menuLayout);
+    public Scene gameScene = new Scene(gameLayout);
     
 
     
@@ -43,6 +44,7 @@ public class App extends Application {
         stage.setScene(menuScene);
         menuLayout.getChildren().add(start);
         start.relocate(400, 500);
+        
         
         
 
