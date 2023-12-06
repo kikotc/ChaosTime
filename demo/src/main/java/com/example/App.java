@@ -12,8 +12,9 @@ import java.io.IOException;
  * JavaFX App
  */
 public class App extends Application {
+    //declare at class scope 
+    public static Scene scene;
 
-    private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
