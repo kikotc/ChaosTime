@@ -19,11 +19,11 @@ import java.io.IOException;
 public class App extends Application {
     //declare variables at class scope 
     public static Scene scene;
-    public Pane MenuLayout = new Pane();
+    public Pane menuLayout = new Pane();
     public Pane game = new Pane();
     public Stage stage = new Stage();
-    public Button Start = new Button("Start");
-    public Scene menuScene = new Scene(MenuLayout);
+    public Button start = new Button("Start");
+    public Scene menuScene = new Scene(menuLayout);
     
 
     
@@ -41,8 +41,8 @@ public class App extends Application {
         stage.show();
         stage.setTitle("Chaos Time");
         stage.setScene(menuScene);
-        MenuLayout.getChildren().add(Start);
-        Start.relocate(400, 500);
+        menuLayout.getChildren().add(start);
+        start.relocate(400, 500);
         
         
 
