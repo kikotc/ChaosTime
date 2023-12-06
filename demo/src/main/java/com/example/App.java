@@ -22,7 +22,7 @@ public class App extends Application {
     public Pane menuLayout = new Pane();
     public Pane gameLayout = new Pane();
     public Stage stage = new Stage();
-    public Button start = new Button("Start");
+    public Button startButton = new Button("Start");
     public Scene menuScene = new Scene(menuLayout);
     public Scene gameScene = new Scene(gameLayout);
     
@@ -42,9 +42,9 @@ public class App extends Application {
         stage.show();
         stage.setTitle("Chaos Time");
         stage.setScene(menuScene);
-        menuLayout.getChildren().add(start);
-        start.relocate(400, 500);
-        start.setOnAction(event -> {
+        menuLayout.getChildren().add(startButton);
+        startButton.relocate(400, 500);
+        startButton.setOnAction(event -> {
             stage.setScene(gameScene);
 
         });
