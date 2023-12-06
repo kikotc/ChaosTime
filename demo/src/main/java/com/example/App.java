@@ -44,6 +44,10 @@ public class App extends Application {
         stage.setScene(menuScene);
         menuLayout.getChildren().add(start);
         start.relocate(400, 500);
+        start.setOnAction(event -> {
+            stage.setScene(gameScene);
+
+        });
         
         
         
